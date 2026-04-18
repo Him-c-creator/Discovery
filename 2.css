@@ -1,0 +1,22 @@
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #00D2BE !important; /* Mercedes silver */
+        }
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        .card {
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+        }
