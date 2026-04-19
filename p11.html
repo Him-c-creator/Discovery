@@ -10,7 +10,7 @@
     }
     h1 { text-align: center; color: #2c3e50; }
     .container {
-      max-width: 1000px;
+      max-width: 1500px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -19,21 +19,24 @@
     .card {
       background: rgb(255, 255, 255);
       padding: 20px;
-      border-radius: 10px;
-      transition: all 0.3s;
+      width: 700px;
+      height: 700px;
+      border-radius: 50%;
+      transition: all 0.8s;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    h2 { color: #3498db; margin-top: 0; }
+    h2 { color: #111518; margin-top: 0; }
     
     #dropzone {
       border: 3px dashed #3498db;
-      height: 150px;
+     height: 150px;
+      width: 250px;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       font-size: 18px;
-      color: #555;
+      color: #1ba6c9;
       background: #dac6c6;
       margin: 10px 0;
       transition: all 0.3s;
@@ -46,25 +49,24 @@
     .draggable {
       padding: 15px;
       margin: 8px;
-      background: #3498db;
+      background: #647988;
       color: white;
       border-radius: 8px;
       cursor: grab;
       display: inline-block;
-      width: 120px;
+      width: 80px;
       text-align: center;
     }
-
-    /* Geolocation Section */
-    #locationResult {
-      background: #ecf0f1;
+      #locationResult {
+        background: #abb4bb;
+        height: 150px;
+        width: 250px;
       padding: 15px;
       border-radius: 8px;
-      min-height: 100px;
     }
     button {
       padding: 12px 20px;
-      background: #27ae60;
+      background: #010202;
       color: white;
       border: none;
       border-radius: 6px;
@@ -73,17 +75,16 @@
     }
     button:hover { background: #219653; }
 
-    /* Web Storage Section */
     input { padding: 10px; width: 80%; margin: 10px 0; }
     .stored-data {
-      background: #fff3cd;
+      background:   #1c98a8;
       padding: 15px;
       border-radius: 8px;
       margin-top: 10px;
       min-height: 50px;
     }
     .card:hover {
-      transform: translateX(20px);
+      transform:  translate3d(10px, -10px, 0);
       box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
   </style>
@@ -95,7 +96,6 @@
 
   <div class="container">
 
-    <!-- 1. Drag & Drop -->
     <div class="card">
       <h2>1. Drag & Drop API</h2>
       <p><strong>Drag the boxes into the drop zone!</strong></p>
@@ -110,23 +110,23 @@
       <div id="droppedList"></div>
     </div>
 
-    <!-- 2. Geolocation -->
+  
     <div class="card">
       <h2>2. Geolocation API</h2>
       <P>Click the button to get your current location:</P>
       <button onclick="getLocation()">📍 Get My Location</button>
       
       <div id="locationResult">
-        <p><strong>Status:</strong> Click button to start...</p>
+        <p><strong>Status:</strong> Click to get location</p>
       </div>
     </div>
 
-    <!-- 3. Web Storage -->
+
     <div class="card">
       <h2>3. Web Storage (localStorage)</h2>
-      <p>Save your name:</p>
-      <input type="text" id="userName" placeholder="Enter your name">
-      <button onclick="saveName()">Save Name</button>
+      <p>Save anything you want to remember:</p>
+      <input type="text" id="userName" placeholder="Enter something to save">
+      <button onclick="saveName()">Save</button>
       <button onclick="clearStorage()">Clear All</button>
 
       <div class="stored-data">
