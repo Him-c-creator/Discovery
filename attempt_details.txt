@@ -1,0 +1,12 @@
+Q: What is the size of int in C++? | Awarded: 1
+Q: Which operator is used to deallocate memory? | Awarded: -0.5
+Q: Which header file is used for file handling? | Awarded: -0.5
+Q: Is C++ a type-safe language? | Awarded: 1
+Q: Which header file is used for file handling? | Awarded: 1
+Q: Which operator is used to deallocate memory? | Awarded: 1
+Q: What is the size of int in C++? | Awarded: 1
+Q: Is C++ a type-safe language? | Awarded: 1
+Q: What is the size of int in C++? | Awarded: 1
+Q: Is C++ a type-safe language? | Awarded: 1
+Q: Which header file is used for file handling? | Awarded: 1
+Q: Which operator is used to deallocate memory? | Awarded: -0.5

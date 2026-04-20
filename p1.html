@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <title>Student Feedback Fiesta</title>
 </head>
@@ -12,6 +13,9 @@
 <img src = "https://smartcookie.in/image/student250.png"
 height = "100px" width = "100px"
 style = "position:fixed; top :10px; right:50px;">
+
+
+
   <hr>
   <section>
     <h2>📝 Course Feedback Form</h2>
@@ -27,6 +31,7 @@ style = "position:fixed; top :10px; right:50px;">
           <label="studentEmail">Your College Email:<br>
             <input id="email" placeholder="Email address">
         </p>
+ 
          <label for="sessionFormat">Course Name:<br>
             <select id="drop">
                 
@@ -36,78 +41,72 @@ style = "position:fixed; top :10px; right:50px;">
               <option value="SMPL">SMPL</option>
             </select>
           </label>
+
       </fieldset>
+
       <fieldset>
         <legend>⭐ Course Experience</legend>
-<form>
+
         <p><b>1.How was your experience?</b></p>
         <p>
-          <label><input type="radio" name="experience"> Poor</label>
-          <label><input type="radio" name="experience"> Fair</label>
-          <label><input type="radio" name="experience"> Good</label>
-          <label><input type="radio" name="experience"> Excellent</label>
+          <label><input type="radio" name="difficulty" value="poor" required> Poor</label>
+          <label><input type="radio" name="difficulty" value="fair"> Fair</label>
+          <label><input type="radio" name="difficulty" value="good"> Good</label>
+          <label><input type="radio" name="difficulty" value="excellent"> Excellent</label>
         </p>
-   </form>
-   <form>
  <p><b>2.Teacher's method of teaching</b></p>
         <p>
-          <label><input type="radio" name="teachingMethod"> Poor</label>
-          <label><input type="radio" name="teachingMethod"> Fair</label>
-          <label><input type="radio" name="teachingMethod"> Good</label>
-          <label><input type="radio" name="teachingMethod"> Excellent</label>
+          <label><input type="radio" name="difficulty" value="poor" required> Poor</label>
+          <label><input type="radio" name="difficulty" value="fair"> Fair</label>
+          <label><input type="radio" name="difficulty" value="good"> Good</label>
+          <label><input type="radio" name="difficulty" value="excellent"> Excellent</label>
         </p>
-      </form>
-      <form>
  <p><b>3.The ease of understanding the material</b></p>
         <p>
-          <label><input type="radio" name="ease"> Poor</label>
-          <label><input type="radio" name="ease"> Fair</label>
-          <label><input type="radio" name="ease"> Good</label>
-          <label><input type="radio" name="ease"> Excellent</label>
+          <label><input type="radio" name="difficulty" value="poor" required> Poor</label>
+          <label><input type="radio" name="difficulty" value="fair"> Fair</label>
+          <label><input type="radio" name="difficulty" value="good"> Good</label>
+          <label><input type="radio" name="difficulty" value="excellent"> Excellent</label>
         </p>
-        </form>
-        <form>
  <p><b>4.The usage of projectors and high end technology</b></p>
         <p>
-          <label><input type="radio" name="technology"> Poor</label>
-          <label><input type="radio" name="technology"> Fair</label>
-          <label><input type="radio" name="technology"> Good</label>
-          <label><input type="radio" name="technology"> Excellent</label>
+          <label><input type="radio" name="difficulty" value="poor" required> Poor</label>
+          <label><input type="radio" name="difficulty" value="fair"> Fair</label>
+          <label><input type="radio" name="difficulty" value="good"> Good</label>
+          <label><input type="radio" name="difficulty" value="excellent"> Excellent</label>
         </p>
-        </form>
-        <form>
          <p><b>5.The real-life application of the concepts</b></p>
         <p>
-          <label><input type="radio" name="application"> Poor</label>
-          <label><input type="radio" name="application"> Fair</label>
-          <label><input type="radio" name="application"> Good</label>
-          <label><input type="radio" name="application"> Excellent</label>
+          <label><input type="radio" name="difficulty" value="poor" required> Poor</label>
+          <label><input type="radio" name="difficulty" value="fair"> Fair</label>
+          <label><input type="radio" name="difficulty" value="good"> Good</label>
+          <label><input type="radio" name="difficulty" value="excellent"> Excellent</label>
         </p>
-        </form>
-        <form>
                  <p><b>6.The overall quality of the course</b></p>
         <p>
-          <label><input type="radio" name="quality"> Poor</label>
-          <label><input type="radio" name="quality"> Fair</label>
-          <label><input type="radio" name="quality"> Good</label>
-          <label><input type="radio" name="quality"> Excellent</label>
+          <label><input type="radio" name="difficulty" value="poor" required> Poor</label>
+          <label><input type="radio" name="difficulty" value="fair"> Fair</label>
+          <label><input type="radio" name="difficulty" value="good"> Good</label>
+          <label><input type="radio" name="difficulty" value="excellent"> Excellent</label>
         </p>
-</form>
+
         <p>
           <label for="liked">What did you like most about this course?<br>
             <textarea id="liked" name="liked" rows="4" placeholder="Describe the highlights" required></textarea>
           </label>
         </p>
+
         <p>
           <label for="suggestions">Suggestions for improvement:<br>
             <textarea id="suggestions" name="suggestions" rows="4" placeholder="Ideas to make the course better" required></textarea>
           </label>
         </p>
+
         <p><b>Would you recommend this course to others?</b></p>
         <p>
-          <label><input type="radio" name="recommend"> Yes, definitely</label>
-          <label><input type="radio" name="recommend"> Maybe</label>
-          <label><input type="radio" name="recommend"> No</label>
+          <label><input type="radio" name="recommend" value="Yes" required> Yes, definitely</label>
+          <label><input type="radio" name="recommend" value="Maybe"> Maybe</label>
+          <label><input type="radio" name="recommend" value="No"> No</label>
         </p>
                 <p>
           <label for="overallRating">Overall Rating (1–10):<br>
@@ -128,17 +127,20 @@ style = "position:fixed; top :10px; right:50px;">
             </select>
           </label>
         </p>
+
         <p>
           <label for="topics">Topics to add or expand (comma separated):<br>
             <input id="topics" name="topics" type="text" placeholder="e.g. more hands-on projects" required>
           </label>
         </p>
       </fieldset>
+
       <p>
         <button type="submit">Send Feedback 🚀</button>
       </p>
     </form>
   </section>
+
   <hr>
   <footer>
     <center>
@@ -147,6 +149,7 @@ style = "position:fixed; top :10px; right:50px;">
 <a href="https://en.Privacy_policy">Privacy policy</a><br>
 <a href="https://en.:About">About</a><br>
 <a href="https://en.:Contact_us">Contact</a>
+
 </p>
     </center>
   </footer>
