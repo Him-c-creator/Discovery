@@ -1,7 +1,6 @@
-/* style-glow.css: Awesome glowing style for Student Feedback Fiesta */
 
 body {
-  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  background: linear-gradient(135deg, #25d4cc , #001d1d);
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -17,21 +16,6 @@ main {
   border: 2px solid #fff;
 }
 
-h1, h2, legend {
-  color: #222;
-  text-shadow: 0 0 8px #fff, 0 0 16px #00e6ff, 0 0 24px #00e6ff;
-  letter-spacing: 1px;
-}
-
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 0.2em;
-}
-
-h2 {
-  font-size: 1.5em;
-  margin-top: 1.5em;
-}
 
 fieldset {
   border: 2px solid #00e6ff;
@@ -60,15 +44,6 @@ input[type="text"], input[type="email"], textarea, select {
   background: #fff;
   box-shadow: 0 0 8px #00e6ff22;
   transition: box-shadow 0.2s;
-}
-
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focus {
-  outline: none;
-  box-shadow: 0 0 16px #00e6ff88;
-}
-
-input[type="radio"], input[type="range"] {
-  accent-color: #00e6ff;
 }
 
 button[type="submit"] {
@@ -102,11 +77,16 @@ img {
   border-radius: 16px;
   box-shadow: 0 0 24px #00e6ff55, 0 0 8px #fff;
   margin-bottom: 18px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-hr {
-  border: none;
-  border-top: 2px solid #00e6ff;
-  margin: 32px 0;
-  box-shadow: 0 0 8px #00e6ff44;
+img:hover {
+  transform: scale(1.07) rotate(2deg);
+  box-shadow: 0 0 40px #00e6ffcc, 0 0 16px #fff;
 }
+
+img[style*="position:fixed"]:hover {
+  transform: scale(1.15) rotate(2deg);
+  box-shadow: 0 0 32px #30f7f7cc, 0 0 16px #fff;
+}
+
